@@ -2,22 +2,19 @@ package app;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        int myFavNum = 22;
+        int count = 0;
+        String color = "red";
+        
 
-        System.out.println(myFavNum);
+       while (count < 667) {
+           System.out.println("The count is " + count);
+           count = count + 1;
+       }
+       while (color == "red"){
+           System.out.println("the color is " + color);
+           color = "green";
+       }
 
-        boolean livesInAlbertville = true;
-
-        System.out.println("Do I live in Albertville");
-        System.out.println(livesInAlbertville);
-        byte HowManyTonguesDoIHave = 1;
-
-        System.out.println("HowManyTonguesDoIHave");
-        System.out.println(HowManyTonguesDoIHave);
-        short HowOldAmI = 15;
-
-
-System.out.println("How old Am I");
-        System.out.println(HowOldAmI);
- }
+       System.out.println("count finished");
+    }
 }
