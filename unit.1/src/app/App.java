@@ -2,19 +2,18 @@ package app;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        int count = 0;
-        String color = "red";
-        
+       
+      for (int i = 1; i <= 10; i++){
 
-       while (count < 667) {
-           System.out.println("The count is " + count);
-           count = count + 1;
-       }
-       while (color == "red"){
-           System.out.println("the color is " + color);
-           color = "green";
-       }
+      if (i % 2 == 0){
+          System.out.println(i + " is an even number");
+      }
+      else{
+          System.out.println(i + " is an odd number");
+      }
+     }
 
-       System.out.println("count finished");
+
+      System.out.println("All finished");
     }
 }
