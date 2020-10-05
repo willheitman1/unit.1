@@ -3,19 +3,20 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Scanner input = new Scanner(System.in);
+                      
+System.out.println("ENTER PASSWORD");
 
-        System.out.println("please enter a number");
-        int number = input.nextInt();
+                        Scanner input = new Scanner(System.in);
 
-        int count = 0;
+        String answer1 = input.nextLine();
 
-        while(count < number) {
-            count = count + 1;
-        for (int i = 0; i <= 1000; i = i +1){
-            System.out.println("the count is " + i);
-        }
+        if (answer1.equals("0719")){
+            System.out.println("CORRECT");
         }
 
+        else{
+        System.out.println("INCORRECT");
+                System.out.println("ENTER PASSWORD");
+        }
     }
 }
