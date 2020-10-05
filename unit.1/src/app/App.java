@@ -1,19 +1,21 @@
 package app;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-       
-      for (int i = 1; i <= 10; i++){
+        Scanner input = new Scanner(System.in);
 
-      if (i % 2 == 0){
-          System.out.println(i + " is an even number");
-      }
-      else{
-          System.out.println(i + " is an odd number");
-      }
-     }
+        System.out.println("please enter a number");
+        int number = input.nextInt();
 
+        int count = 0;
 
-      System.out.println("All finished");
+        while(count < number) {
+            count = count + 1;
+        for (int i = 0; i <= 1000; i = i +1){
+            System.out.println("the count is " + i);
+        }
+        }
+
     }
 }
