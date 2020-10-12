@@ -4,23 +4,14 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        int targetNum = 75;
+        boolean isFinished = false;
+
         Scanner input = new Scanner(System.in);
 
- while (true){
-
-        System.out.println("please enter a number");
-
-            String answer1 = input.nextLine();
-
-            if (answer1.equals("38")){
-            System.out.println("correct!");
-            break;
+        while(isFinished == false){
+            System.out.println("Guess a number between 0 and 100");
+            int Sguess input.nextInt();
         }
-
-        else{
-            System.out.println("wrong answer try again");
-        }
-        }
-
         }
 }
