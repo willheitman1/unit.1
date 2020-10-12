@@ -1,24 +1,26 @@
 package app;
+
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) throws Exception {Scanner(System.in);
+    public static void main(String[] args) throws Exception {
+        Scanner input = new Scanner(System.in);
 
-    System.out.println("please enter your full name");
-    System.out.println("please enter your first name");
-    String firstName = input.nextLine();
+ while (true){
 
-    System.out.println("please enter your last name");
+        System.out.println("please enter a number");
 
-    String lastName = input.nextLine();
+            String answer1 = input.nextLine();
 
-    System.out.println("please enter your age");
-@@ -23,7 +26,7 @@ public static void main(String[] args) {
+            if (answer1.equals("38")){
+            System.out.println("correct!");
+            break;
+        }
 
-    String favColor = input.nextLine();
+        else{
+            System.out.println("wrong answer try again");
+        }
+        }
 
-    System.out.println("hello " + firstName + " " + lastName + "how old  are you? " + age + " " + "what grade are you in? " + grade + " " + "and whats your fav color " + favColor);
-    System.out.println("hello " + firstName + " " + lastName + "you are " + age + " " + "you are in grade " + grade + " " + "your fav color is " + favColor);
-
-    }
+        }
 }
