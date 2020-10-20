@@ -3,21 +3,24 @@ package app;
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception { 
+      int count = 0;
+      String color = "red";
+
+
+      while (count <= 719) {
+          System.out.println("the count is " + count);
+          count = count + 1;
         
- Scanner input = new Scanner(System.in);
+      }
 
-        System.out.println("please enter a number");
+      System.out.println("count finished");
 
-            int answer1 = input.nextInt();
+      while (color == "red"){
+          System.out.println("the color is " + color);
+          color = "blue";
+      }
 
-              System.out.println("please enter a number");
-
-            int answer2 = input.nextInt();
-            
-            for (int i = answer1; i < answer2; i += 2) {
-        System.out.println(i);        
-     }
-
+      System.out.println("color finished");
         }
 }
