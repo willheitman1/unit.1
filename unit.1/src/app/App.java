@@ -1,41 +1,61 @@
 package app;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) throws Exception {        boolean livesInAlbertville = false;
-     String person1 = "kyle";
-     String verb1 = "eat";
-     String place1 = "dunkin donuts";
+    public static void main(String[] args) throws Exception { 
+        
+        Scanner input = new Scanner(System.in);
 
-        System.out.println("do i live in albertville?");
-        System.out.println(livesInAlbertville);
-        byte howManyFingersIHave = 10;
-     System.out.println(person1 + " " + "likes too" + " " + verb1 + " " + "at" + " " + place1);
 
-        System.out.println("how many finger do i have?");
-        System.out.println(howManyFingersIHave);
-        char statesInUnitedstates = 'f';
-     String person2 = "ashey";
-     String verb2 = "race";
-     String place2 = "town";
-     String adjective1 = "fast";
+        Random rnd = new Random();
 
-        System.out.println("how many states are in the unitedstates?");
-        System.out.println(statesInUnitedstates);
-        short willsFavNum = 19;
-     System.out.println(person2 + " " + "likes to" + " " + verb2 + " " + "all round" + " " + place2 + " " + "because she is really" + " " + adjective1);
+        while (true){
+        
+        System.out.println("would you like to make a inside or outside bet");
+            String answer1 = input.nextLine();
 
-        System.out.println("what is wills favorite number");
-        System.out.println(willsFavNum);
-        long bigNum = 32489372;
-     String food = "dog";
-     String verb3 = "jumpy";
-     String adjective2 = "yummy";
-     String dayOfWeek = "saturdays";
+             if (answer1.equals("inside")){
+                 System.out.println("what number would you like to bet on");
+                 int answer2 = input.nextInt();
+                 int n2 = rnd.nextInt(37);
+                 System.out.println("genrated number is " + n2);
 
-        System.out.println("what is a big number");
-        System.out.println(bigNum);
-     System.out.println("on" + " " + dayOfWeek + " " + "i get very" + " " + verb3 + " " + "becuase we sometimes get to have" + " " + food + " " + "and it is very very" + " " + adjective2);
+                 if(n2 == answer2){
+                     System.out.println("your right!");
+                     System.out.println("if you want to bet again say bet if you would like to withdraw say withdraw");
+                     String answer3 = input.nextLine();
+                     if(answer3.equals("bet")){
+                         System.out.println("next round "); 
+                     }
+                     else{
+                         System.out.println("Thank you");
+                         break;
+                     }
+                    }
+                 else{
+                     System.out.println("your wrong");
+                      System.out.println("if you want to bet again say bet if you would like to withdraw say withdraw");
+                     String answer4 = input.nextLine();
+                     if(answer4.equals("bet")){
+                         System.out.println("next round");
+                         }
+
+                          else{
+                         System.out.println("Thank you");
+                         break;
+                         }
+                         
+                     }
+                     }
+                     else{
+                         System.out.println("Thank you");
+                         break;
+                 }
+
+                }
+
     }
+
 } 
